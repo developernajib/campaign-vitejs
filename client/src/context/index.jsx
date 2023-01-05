@@ -12,7 +12,7 @@ const StateContext = createContext();
 
 export const StateContextProvider = ({ children }) => {
 	const { contract } = useContract(
-		import.meta.env.VITE_CROWDFUNDING_CONTRACT_KEY
+		import.meta.env.VITE_CAMPAIGN_CONTRACT_KEY
 	);
 	const { mutateAsync: createCampaign } = useContractWrite(
 		contract,
